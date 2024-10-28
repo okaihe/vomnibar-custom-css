@@ -9,3 +9,6 @@ Go the `Vimium Options` page (By first clicking on the extension icon and then
 on the `Options` link) and append the content of the `style.css` file to the
 default content of the field `CSS for Vimium UI` :)
 
+## Preview
+
+![Preview image](preview.png "Vomnibar preview")
