@@ -1,0 +1,83 @@
+#vomnibar {
+  border: none;
+  background: transparent;
+  width: 100%;
+  display: flex;
+  box-shadow: none;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#vomnibar .vomnibarSearchArea {
+  padding: 0;
+  width: 80%;
+  max-width: 1100px;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(130, 130, 130, 0.9);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+}
+
+#vomnibar .vomnibarSearchArea::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10.9px);
+  z-index: -1;
+}
+
+#vomnibar #vomnibarInput {
+  background: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+#vomnibar ul {
+  width: calc(80% + 40px);
+  max-width: 1140px;
+  margin-top: 10px;
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(130, 130, 130, 0.9);
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+}
+
+#vomnibar ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10.9px);
+  z-index: -1;
+}
+
+#vomnibar ul li {
+  background: transparent;
+  padding: 12px 10px;
+}
+
+#vomnibar ul li:first-child {
+  padding-top: 22px;
+}
+
+#vomnibar ul li:last-child {
+  padding-bottom: 22px;
+}
+
+#vomnibar li.vomnibarSelected {
+  background-color: rgba(60, 64, 66, 0.8);
+}
